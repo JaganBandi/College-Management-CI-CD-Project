@@ -8,8 +8,6 @@ This project demonstrates an end-to-end CI/CD pipeline for a Java-based College 
 
 The pipeline automates the complete software delivery process from source code checkout to Docker image deployment.
 
----
-
 ## Technology Stack
 
 * Git & GitHub
@@ -20,8 +18,6 @@ The pipeline automates the complete software delivery process from source code c
 * Nexus Repository
 * Docker
 * Docker Hub
-
----
 
 ## CI/CD Workflow
 
@@ -37,8 +33,6 @@ The pipeline automates the complete software delivery process from source code c
 10. Docker image is pushed to Docker Hub.
 11. Jenkins sends build notification through email.
 
----
-
 ## Jenkins Pipeline Stages
 
 * Checkout Code
@@ -52,11 +46,8 @@ The pipeline automates the complete software delivery process from source code c
 * Push Docker Image to Docker Hub
 * Email Notification
 
----
-
 ## Project Structure
 
-```
 College-Management-CI-CD/
 ├── src/
 ├── pom.xml
@@ -64,31 +55,23 @@ College-Management-CI-CD/
 ├── Jenkinsfile
 ├── .gitignore
 └── README.md
-```
 
----
 
 ## Maven Commands Used
 
-```bash
+  bash
 mvn validate
 mvn compile
 mvn test
 mvn clean package
 mvn deploy
-```
-
----
 
 ## Docker Commands Used
 
-```bash
+   bash
 docker build -t college-management:v1 .
-docker tag college-management:v1 <dockerhub-username>/college-management:v1
-docker push <dockerhub-username>/college-management:v1
-```
-
----
+docker tag college-management:v1 jaganbandi/college-management:v1
+docker push jaganbandi/college-management:v1
 
 ## Features
 
@@ -101,16 +84,12 @@ docker push <dockerhub-username>/college-management:v1
 * Email Notifications
 * Fully Automated Jenkins Pipeline
 
----
-
 ## Future Enhancements
 
 * Kubernetes Deployment
 * ArgoCD Integration
 * Terraform Infrastructure Automation
 * Ansible Configuration Management
-
----
 
 ## Author
 
