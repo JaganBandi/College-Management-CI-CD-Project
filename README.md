@@ -69,9 +69,11 @@ mvn deploy
 ## Docker Commands Used
 
    bash
-docker build -t college-management:v1 .
-docker tag college-management:v1 jaganbandi/college-management:v1
-docker push jaganbandi/college-management:v1
+* docker build -t college-management:v1 .
+
+* docker tag college-management:v1 jaganbandi/college-management:v1
+
+* docker push jaganbandi/college-management:v1
 
 ## Features
 
